@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
 * {
     margin: 0;
@@ -154,7 +154,7 @@ main p {
 header {
     background:
         radial-gradient(circle, rgba(45, 22, 22, 0.4) 0%, rgba(15, 15, 15, 0.8) 100%),
-        url('../Imagenes/patron.png');
+        url('Imagenes/patron.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -180,7 +180,7 @@ footer {
     height: 120px;
     background:
         radial-gradient(circle, rgba(45, 22, 22, 0.4) 0%, rgba(15, 15, 15, 0.8) 100%),
-        url('../Imagenes/patron.png');
+        url('Imagenes/patron.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -709,7 +709,7 @@ body.dark-mode header {
     justify-content: center;
     align-items: center;
     background-color: #8b0000;
-    background-image: url('../Imagenes/patron.png');
+    background-image: url('Imagenes/patron.png');
     background-repeat: repeat;
     background-size: auto;
     background-position: center;
@@ -726,7 +726,7 @@ body.dark-mode header {
 
 .login-box {
     background-color: rgba(0, 0, 0, 0.5);
-    background-image: url('../Imagenes/iniciosesionbackground.jpg');
+    background-image: url('Imagenes/iniciosesionbackground.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
@@ -782,7 +782,6 @@ body.dark-mode header {
     padding: 12px;
     color: #ab8e54;
     border: 1px solid #ab8e54;
-
     background: transparent;
     text-decoration: none;
     font-weight: bold;
@@ -859,7 +858,7 @@ body.dark-mode header {
 
 .login-box {
     background-color: rgba(0, 0, 0, 0.6);
-    background-image: url('../Imagenes/iniciosesionbackground.jpg');
+    background-image: url('Imagenes/iniciosesionbackground.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -883,7 +882,6 @@ body.dark-mode header {
     border: 1px solid #ab8e54;
     color: white;
 }
-
 
 .contenedor-checkbox {
     display: flex;
@@ -948,7 +946,6 @@ body.dark-mode header {
     align-items: center;
     gap: 10px;
     justify-content: flex-end;
-
 }
 
 #nombre-usuario-display {
@@ -973,17 +970,17 @@ body.dark-mode header {
 }
 
 .cookie-img {
-    width: 50px !important; 
-    height: 50px;          
-    object-fit: contain;   
+    width: 50px !important;
+    height: 50px;
+    object-fit: contain;
     margin-right: 15px;
-    flex-shrink: 0;         
+    flex-shrink: 0;
 }
 
 .body-carrito { margin: 0; padding: 0; min-height: 100vh; display: flex; flex-direction: column; }
 
 .carrito-container-principal {
-    background-image: url('../Imagenes/fondo.png');
+    background-image: url('Imagenes/fondo.png');
     background-color: #1a1a1a;
     padding: 40px;
     flex: 1;
@@ -1009,7 +1006,6 @@ body.dark-mode header {
     max-width: 1100px;
 }
 
-
 .item-carrito, .celda-erawan {
     background: #1a1a1a;
     border: 2px solid #d4af37;
@@ -1033,31 +1029,32 @@ body.dark-mode header {
     flex-shrink: 0;
 }
 
-.input-erawan { 
-    width: 100%; 
-    padding: 12px; 
-    border-radius: 5px; 
-    border: 1px solid #ccc; 
-    box-sizing: border-box; 
-    margin-bottom: 10px; 
+.input-erawan {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
-.grupo-descuento { 
-    display: flex; 
-    gap: 10px; 
-    margin-bottom: 15px; 
+.grupo-descuento {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
-.btn-dorado-erawan { 
-    background-color: #d4af37; 
-    color: black; 
-    border: none; 
-    padding: 10px 20px; 
-    border-radius: 5px; 
-    font-weight: bold; 
-    cursor: pointer; 
-    white-space: nowrap; 
+.btn-dorado-erawan {
+    background-color: #d4af37;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
 }
+
 .carrito-col-derecha {
     display: flex;
     flex-direction: column;
@@ -1075,7 +1072,6 @@ body.dark-mode header {
     box-sizing: border-box;
 }
 
-
 .btn-finalizar {
     background: #d4af37;
     color: black;
@@ -1088,7 +1084,7 @@ body.dark-mode header {
     display: block;
     margin-top: 20px;
     text-decoration: none;
-    font-size: 18px; 
+    font-size: 18px;
     text-align: center;
 }
 
@@ -1096,30 +1092,32 @@ body.dark-mode header {
     display: block;
     text-align: center;
     margin-top: 20px;
-    color: #ffffff ;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
 }
-.btn-seguir-comprando:hover { color: #d4af37 ; }
+
+.btn-seguir-comprando:hover { color: #d4af37; }
+
 .icono-nav {
     display: flex;
     align-items: center;
     text-decoration: none;
-    gap: 8px; 
+    gap: 8px;
 }
 
 .icono-img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 2px solid #d4af37; 
+    border: 2px solid #d4af37;
     object-fit: cover;
 }
 
 #contador-carrito {
-    background: #d4af37; 
-    color: black;        
+    background: #d4af37;
+    color: black;
     border-radius: 50%;
     width: 25px;
     height: 25px;
@@ -1128,16 +1126,16 @@ body.dark-mode header {
     justify-content: center;
     font-size: 0.8rem;
     font-weight: bold;
-    border: 1px solid #000; 
+    border: 1px solid #000;
 }
 
 .caja-pago-grande {
     background: #1a1a1a;
-    border: 2px solid #d4af37; 
+    border: 2px solid #d4af37;
     padding: 40px;
     border-radius: 20px;
     width: 100%;
-    max-width: 500px; 
+    max-width: 500px;
     margin: 50px auto;
     color: white;
     text-align: center;
@@ -1150,10 +1148,10 @@ body.dark-mode header {
 
 .aviso-educativo {
     text-align: center;
-    color: #ffffff; 
+    color: #ffffff;
     margin: 15px 0;
     padding: 10px;
     font-size: 0.9em;
-    border-top: 1px solid rgba(255, 255, 255, 0.2); 
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
