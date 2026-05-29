@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - ERAWAN</title>
+    <link rel="stylesheet" href="../css-pagweb2.css">
+</head>
+
+<body class="pagina-acceso">
+
+<div class="contenedor-acceso">
+    <div class="login-box">
+        <h2>Crear Cuenta</h2>
+        
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="text" id="apellidos" placeholder="Apellidos" required>
+        <input type="email" id="email" placeholder="Correo electrónico" required>
+        <input type="tel" id="telefono" placeholder="Número de teléfono" required>
+        
+        <label class="colorBlancoCuenta">Fecha de nacimiento:</label>
+        <input type="date" id="fecha-nacimiento" required>
+        
+        <input type="text" id="usuario" placeholder="Usuario" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+
+        <div class="contenedor-checkbox">
+            <label class="item-check"><input type="checkbox"> <span class="colorBlancoCuenta">Deseo recibir noticias</span></label>
+            <label class="item-check"><input type="checkbox" id="check-privacidad"> <span class="colorBlancoCuenta">Acepto la política de privacidad</span></label>
+        </div>
+
+        <button id="btn-registrar" disabled>REGISTRARSE</button>
+    </div>
+
+    <div class="olvido-box">
+        <h5 class="colorBlancoCuenta">¿Ya tienes cuenta?</h5>
+        <a href="InicioSesion.html" class="link-recuperar">Inicia sesión</a>
+    </div>
+</div>
+
+<script src="../Script/script.js"></script>
+
+</body>
+</html>

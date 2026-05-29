@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tu Carrito - ERAWAN</title>
+    <link rel="stylesheet" href="../css-pagweb2.css">
+</head>
+
+<body class="body-carrito">
+
+    <header>
+        <div class="logo-container">
+            <img src="../Imagenes/logo.png" class="imgheader" alt="ERAWAN Logo">
+        </div>
+    </header>
+
+    <main class="carrito-container-principal">
+
+        <div class="carrito-grid">
+            <div id="lista-carrito"></div>
+
+            <div class="carrito-col-derecha">
+                <div class="celda-erawan">
+                    <h3>Dirección de entrega</h3>
+                    <select id="zona-envio" class="input-erawan" onchange="calcularConEnvio()">
+                        <option value="0" disabled selected>Seleccione zona...</option>
+                        <option value="canarias">Islas Canarias (Envío Gratis)</option>
+                        <option value="peninsula">Península (+15€ envío)</option>
+                        <option value="baleares">Baleares (+18€ envío)</option>
+                    </select>
+
+                    <input type="text" id="provincia" class="input-erawan" placeholder="PROVINCIA">
+                    <input type="text" id="codigo-postal" class="input-erawan" placeholder="Código postal">
+                    <input type="text" id="direccion-calle" class="input-erawan" placeholder="Calle, numero, piso...">
+                </div>
+
+                <div class="celda-erawan">
+                    <div class="grupo-descuento">
+                        <input type="text" id="codigo-descuento" class="input-erawan" placeholder="Código descuento">
+                        <button class="btn-dorado-erawan" onclick="aplicarDescuento()">Aplicar</button>
+                    </div>
+                    <h2 id="total-carrito">Total: 0.00€</h2>
+                    <button onclick="verificarCompra()" class="btn-finalizar">Realizar Pedido</button>
+                </div>
+
+                <a href="productos.html" class="btn-seguir-comprando">← Seguir comprando</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-patron"></div>
+    </footer>
+
+    <script src="../Script/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", cargarCarrito);
+    </script>
+</body>
+
+</html>

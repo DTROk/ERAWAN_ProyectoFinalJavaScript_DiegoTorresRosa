@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Erawan</title>
+    <link rel="stylesheet" href="../css-pagweb2.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <div class="logo-container">
+                <img src="../Imagenes/logo.png" class="imgheader" alt="ERAWAN Logo">
+            </div>
+
+            <div class="header-right-zone">
+                <a href="../Htmls/Carrito.html" class="icono-nav">
+                    <img src="../Imagenes/carrito.webp" alt="Carrito" class="icono-img">
+                    <span id="contador-carrito">0</span>
+                </a>
+
+                <div class="user-container">
+                    <a href="InicioSesion.html" class="icono-nav">
+                        <img src="../Imagenes/usuario.png" alt="Usuario" class="icono-img">
+                    </a>
+                    <span id="nombre-usuario-display"></span>
+                </div>
+
+                <div class="dark-mode-switch">
+                    <span class="switch-label">MODO OSCURO</span>
+                    <button id="btn-dark-mode" class="toggle-btn">OFF</button>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="listanav">
+                <h2 class="tittle">DESCUBRE ERAWAN</h2>
+                <li><a href="../Htmls/PagWeb2.html">Inicio</a></li>
+                <li><a href="../Htmls/productos.html">Productos</a></li>
+                <li><a href="../Htmls/Proyecto-Tailandia.html">Proyecto-Tailandia</a></li>
+                <li><a href="../Htmls/Nuestros Nak-Muays.html">Nuestros nak-Muays</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h3>Los productos que se muestran a continuación son la primera edición por la abertura de nuestra marca.
+                Por lo tanto son EDICIÓN LIMITADA hasta fin de existencias.</h3>
+            <section class="contenedor-productos">
+                <div class="tarjeta-producto">
+                    <div class="imagen-contenedor">
+                        <span class="etiqueta-nuevo">NUEVO</span>
+                        <img src="../Imagenes/pantalones.png" alt="Pantalón Erawan">
+                    </div>
+                    <div class="info-producto">
+                        <h3>Pantalón "1st edition" Erawan</h3>
+                        <p class="descripcion">Corte tailandés clásico para máxima movilidad. Materiales de alta calidad
+                        </p>
+                        <p class="precio">39.99€</p>
+
+                        <div class="opciones-compra">
+                            <select name="talla" class="selector-talla">
+                                <option value="">Seleccionar Talla</option>
+                                <option value="xs">XS</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+                            <button class="boton-comprar"
+                                onclick="agregarAlCarrito('Pantalón 1st edition', 39.99, '../Imagenes/pantalones.png', this)">Añadir
+                                al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto">
+                    <div class="imagen-contenedor">
+                        <span class="etiqueta-nuevo">NUEVO</span>
+                        <img src="../Imagenes/camiseta.png" alt="Camiseta Erawan">
+                    </div>
+                    <div class="info-producto">
+                        <h3>Camiseta manga corta "1st edition" Erawan</h3>
+                        <p class="descripcion">Camiseta ligera de manga corta. Materiales de alta calidad para una
+                            resistencia prolongada y el menor peso posible</p>
+                        <p class="precio">29.99€</p>
+                        <div class="opciones-compra">
+                            <select name="talla" class="selector-talla">
+                                <option value="">Seleccionar Talla</option>
+                                <option value="xs">XS</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+                            <button class="boton-comprar"
+                                onclick="agregarAlCarrito('Camiseta manga corta', 29.99, '../Imagenes/camiseta.png', this)">Añadir
+                                al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto">
+                    <div class="imagen-contenedor">
+                        <span class="etiqueta-nuevo">NUEVO</span>
+                        <img src="../Imagenes/camiseta tank.png" alt="Camiseta Erawan">
+                    </div>
+                    <div class="info-producto">
+                        <h3>Camiseta sin mangas "1st edition" Erawan</h3>
+                        <p class="descripcion">Camiseta ligera sin mangas. Materiales de alta calidad para una
+                            resistencia prolongada y el menor peso posible</p>
+                        <p class="precio">26.99€</p>
+                        <div class="opciones-compra">
+                            <select name="talla" class="selector-talla">
+                                <option value="">Seleccionar Talla</option>
+                                <option value="xs">XS</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+                            <button class="boton-comprar"
+                                onclick="agregarAlCarrito('Camiseta sin mangas', 26.99, '../Imagenes/camiseta tank.png', this)">Añadir
+                                al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto">
+                    <div class="imagen-contenedor">
+                        <span class="etiqueta-nuevo">NUEVO</span>
+                        <img src="../Imagenes/bundle.png" alt="Bundle Erawan">
+                    </div>
+                    <div class="info-producto">
+                        <h3>Bundle "1st edition" Erawan</h3>
+                        <p class="descripcion">Set de material para entrenamientos. Materiales de alta calidad, diseñado
+                            con los mejores materiales para alta resistencia, durabilidad y lo más ligero posible
+                            (Tamaño vendas: 4 m)</p>
+                        <p class="precio">159.99€</p>
+                        <div class="opciones-compra">
+                            <select name="talla" class="selector-talla">
+                                <option value="">Seleccionar Onzas Guantes</option>
+                                <option value="8">8 oz</option>
+                                <option value="10">10 oz</option>
+                                <option value="12">12 oz</option>
+                                <option value="14">14 oz</option>
+                                <option value="16">16 oz</option>
+                            </select>
+                            <select name="talla" class="selector-talla">
+                                <option value="">Seleccionar Talla Espinilleras</option>
+                                <option value="xs">XS</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+                            <button class="boton-comprar"
+                                onclick="agregarAlCarrito('Bundle 1st edition', 159.99, '../Imagenes/bundle.png', this)">Añadir
+                                al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-patron">
+                <div class="aviso-educativo">
+                    <p>Este proyecto es meramente educativo. Las compras y transacciones no son funcionales.</p>
+                </div>
+            </div>
+            <div class="footer-texto">
+                <p>Copyright © 2026 ERAWAN. Todos los derechos reservados.</p>
+                <p>Página diseñada y creada por Diego Torres Rosa</p>
+            </div>
+        </footer>
+    </div>
+
+    <div class="contenedor-avisos"></div>
+    <script src="../Script/script.js"></script>
+</body>
+
+</html>

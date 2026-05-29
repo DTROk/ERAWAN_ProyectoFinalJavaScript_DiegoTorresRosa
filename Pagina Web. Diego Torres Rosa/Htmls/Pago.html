@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Finalizar Pedido - ERAWAN</title>
+    <link rel="stylesheet" href="../css-pagweb2.css">
+</head>
+
+<body class="body-carrito">
+
+    <header>
+        <div class="logo-container">
+            <img src="../Imagenes/logo.png" class="imgheader" alt="ERAWAN Logo">
+        </div>
+    </header>
+
+    <main class="carrito-container-principal">
+        <div class="caja-pago-grande">
+            <h2>Método de Pago</h2>
+
+            <form id="formulario-pago">
+                <input type="text" class="input-erawan" placeholder="Nombre en la tarjeta" required>
+                <input type="text" class="input-erawan" placeholder="Número de tarjeta" required>
+                <div style="display:flex; gap:10px;">
+                    <input type="text" class="input-erawan" placeholder="MM/AA" required>
+                    <input type="text" class="input-erawan" placeholder="CVC" required>
+                </div>
+
+                <button type="button" onclick="procesarPago()" class="btn-finalizar">Realizar Pedido</button>
+            </form>
+
+            <a href="Carrito.html" class="btn-seguir-comprando">← Volver al carrito</a>
+        </div>
+        <script src="../Script/script.js"></script>
+    </main>
+
+    <footer>
+        <div class="footer-patron"></div>
+    </footer>
+</body>
+
+</html>
